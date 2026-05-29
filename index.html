@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>PavingBlocks.id — Supplier + Jasa Pasang Paving Block Mutu Tinggi</title>
+<meta name="description" content="Supplier paving block K200–K500 hidrolik press & jasa pasang profesional. Harga pabrik, garansi tertulis, bebas ongkir Jabodetabek. Konsultasi & survei gratis."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --O:#FF7A3D;
+  --Od:#e85e1f;
+  --Ol:#ff9a6c;
+  --Obg:rgba(255,122,61,0.08);
+  --D:#1A1A2E;
+  --D2:#2d2d44;
+  --G:#6B7280;
+  --Gl:#9CA3AF;
+  --Gb:#F5F5F7;
+  --Gbl:#EBEBED;
+  --W:#FFFFFF;
+  --sh:0 4px 24px rgba(0,0,0,0.08);
+  --sh2:0 12px 48px rgba(0,0,0,0.14);
+  --r:12px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Plus Jakarta Sans',sans-serif;color:var(--D);background:var(--W);overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Syne',sans-serif;line-height:1.1}
+a{text-decoration:none}
+img{display:block;max-width:100%}
+
+/* ── TOPBAR ── */
+.topbar{background:var(--D);color:#aaa;font-size:13px;padding:9px 0}
+.tb-inner{max-width:1180px;margin:auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.topbar a{color:var(--Ol);transition:color .2s}.topbar a:hover{color:var(--O)}
+.tb-badge{background:var(--O);color:white;font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;letter-spacing:.5px}
+
+/* ── NAV ── */
+header{background:rgba(255,255,255,.95);backdrop-filter:blur(12px);box-shadow:0 1px 0 #e5e5e5;position:sticky;top:0;z-index:200}
+nav{max-width:1180px;margin:auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:10px;color:var(--D);font-family:'Syne',sans-serif;font-weight:900;font-size:22px}
+.logo-mark{width:38px;height:38px;background:var(--O);border-radius:8px;display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:7px}
+.logo-mark div{background:white;border-radius:2px}
+.logo em{font-style:normal;color:var(--O)}
+.nav-links{display:flex;align-items:center;gap:26px;list-style:none}
+.nav-links a{font-size:14px;font-weight:600;color:var(--G);transition:color .2s;letter-spacing:.2px}
+.nav-links a:hover{color:var(--O)}
+.btn-nav{background:var(--O)!important;color:white!important;padding:9px 18px;border-radius:8px;font-size:14px!important;transition:background .2s!important}
+.btn-nav:hover{background:var(--Od)!important}
+.ham{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+.ham span{width:24px;height:2px;background:var(--D);border-radius:2px;transition:all .3s}
+.mob-nav{display:none;position:fixed;top:66px;left:0;right:0;background:white;z-index:199;padding:20px 24px 28px;box-shadow:0 16px 48px rgba(0,0,0,.12)}
+.mob-nav.open{display:block}
+.mob-nav a{display:block;font-size:17px;font-weight:600;color:var(--D);padding:12px 0;border-bottom:1px solid var(--Gb)}
+.mob-nav a:hover{color:var(--O)}
+.mob-nav a:last-child{border:none;color:var(--O)}
+
+/* ── HERO ── */
+.hero{background:var(--D);overflow:hidden;position:relative;padding:100px 24px 110px}
+.hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,122,61,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,122,61,.04) 1px,transparent 1px);background-size:60px 60px}
+.hero-glow{position:absolute;top:-200px;right:-200px;width:700px;height:700px;background:radial-gradient(circle,rgba(255,122,61,.18) 0%,transparent 60%);pointer-events:none}
+.hero-inner{max-width:1180px;margin:auto;position:relative;display:grid;grid-template-columns:1fr 460px;gap:64px;align-items:center}
+.hero-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,122,61,.15);border:1px solid rgba(255,122,61,.3);color:var(--Ol);font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:7px 14px;border-radius:30px;margin-bottom:24px}
+.hero-pill span{width:6px;height:6px;background:var(--O);border-radius:50%;animation:blink 1.4s ease infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+.hero h1{font-size:clamp(40px,5.5vw,68px);color:white;margin-bottom:22px;font-weight:900}
+.hero h1 em{font-style:normal;color:var(--O)}
+.hero-sub{font-size:17px;color:#9CA3AF;line-height:1.75;margin-bottom:36px;max-width:500px}
+.hero-sub strong{color:#e5e5e5}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-a{display:inline-flex;align-items:center;gap:8px;background:var(--O);color:white;font-weight:700;font-size:15px;padding:14px 26px;border-radius:9px;transition:all .2s;font-family:'Syne',sans-serif}
+.btn-a:hover{background:var(--Od);transform:translateY(-1px);box-shadow:0 8px 24px rgba(255,122,61,.4)}
+.btn-b{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);color:white;font-weight:600;font-size:15px;padding:14px 26px;border-radius:9px;border:1px solid rgba(255,255,255,.15);transition:all .2s}
+.btn-b:hover{border-color:var(--O);color:var(--Ol)}
+.hero-trust{display:flex;gap:24px;margin-top:40px;flex-wrap:wrap}
+.trust-pill{display:flex;align-items:center;gap:7px;color:#9CA3AF;font-size:13px}
+.trust-pill .dot{width:7px;height:7px;background:var(--O);border-radius:50%}
+
+/* Hero Visual — Paving Grid */
+.hero-visual{position:relative}
+.pv-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;animation:float 4s ease-in-out infinite alternate}
+@keyframes float{from{transform:translateY(0) rotate(-1deg)}to{transform:translateY(-12px) rotate(1deg)}}
+.pv{aspect-ratio:1;border-radius:5px;background:#2d2d44;border:1px solid #3a3a55}
+.pv.o{background:var(--O);border-color:var(--Od)}
+.pv.m{background:#3f3f5c;border-color:#4a4a6a}
+.pv-label{margin-top:16px;background:rgba(255,122,61,.12);border:1px solid rgba(255,122,61,.2);border-radius:8px;padding:14px 16px;display:flex;justify-content:space-between}
+.pv-stat{text-align:center}
+.pv-stat-n{font-family:'Syne',sans-serif;font-size:22px;font-weight:900;color:white}
+.pv-stat-l{font-size:11px;color:#9CA3AF;margin-top:2px}
+
+/* ── SECTION BASE ── */
+section{padding:88px 24px}
+.si{max-width:1180px;margin:auto}
+.stag{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--O);margin-bottom:10px}
+.stit{font-size:clamp(28px,4vw,44px);font-weight:900;color:var(--D);margin-bottom:14px}
+.stit em{font-style:normal;color:var(--O)}
+.ssub{font-size:16px;color:var(--G);line-height:1.75;max-width:560px;margin-bottom:52px}
+
+/* ── STATS STRIP ── */
+.stats-strip{background:var(--O);padding:0}
+.ss-inner{max-width:1180px;margin:auto;display:grid;grid-template-columns:repeat(5,1fr)}
+.ss-item{padding:28px 20px;text-align:center;border-right:1px solid rgba(255,255,255,.2);color:white}
+.ss-item:last-child{border:none}
+.ss-n{font-family:'Syne',sans-serif;font-size:30px;font-weight:900}
+.ss-l{font-size:12px;opacity:.85;margin-top:3px}
+
+/* ── MASALAH / PROBLEM → REFRAME ── */
+.prob-bg{background:var(--D)}
+.prob-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.prob-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.prob-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:var(--r);padding:22px 20px;transition:all .3s}
+.prob-card:hover{border-color:rgba(255,122,61,.4);background:rgba(255,122,61,.05)}
+.prob-card .pc-icon{font-size:28px;margin-bottom:10px}
+.prob-card h4{font-family:'Syne',sans-serif;font-size:17px;color:white;margin-bottom:6px}
+.prob-card p{font-size:13px;color:#9CA3AF;line-height:1.6}
+.prob-card .tag-bad{display:inline-block;background:rgba(239,68,68,.15);color:#f87171;font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;margin-bottom:10px}
+.prob-card .tag-win{display:inline-block;background:rgba(34,197,94,.12);color:#4ade80;font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;margin-bottom:10px}
+.prob-text .stit{color:white}
+.prob-text .ssub{color:#9CA3AF;margin-bottom:32px}
+.prob-bignum{font-family:'Syne',sans-serif;font-size:80px;font-weight:900;color:rgba(255,122,61,.12);line-height:1;margin-bottom:-20px}
+
+/* ── METODE ── */
+.metode-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.met-card{border-radius:var(--r);padding:32px 26px;background:var(--Gb);border:1px solid var(--Gbl);transition:all .3s;position:relative;overflow:hidden}
+.met-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--Gbl);transition:background .3s}
+.met-card:hover::before{background:var(--O)}
+.met-card:hover{transform:translateY(-4px);box-shadow:var(--sh2)}
+.met-num{font-family:'Syne',sans-serif;font-size:13px;font-weight:900;color:var(--O);letter-spacing:1px;margin-bottom:12px}
+.met-icon{font-size:32px;margin-bottom:14px}
+.met-card h3{font-family:'Syne',sans-serif;font-size:19px;font-weight:800;color:var(--D);margin-bottom:8px}
+.met-card p{font-size:14px;color:var(--G);line-height:1.65}
+.met-result{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:12px;font-weight:700;color:var(--O)}
+
+/* ── PRODUK ── */
+.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.prod-card{background:white;border:1px solid var(--Gbl);border-radius:var(--r);overflow:hidden;transition:all .3s;box-shadow:var(--sh)}
+.prod-card:hover{transform:translateY(-5px);box-shadow:var(--sh2);border-color:var(--O)}
+.prod-img{height:200px;background:var(--Gb);display:flex;align-items:center;justify-content:center;position:relative}
+.prod-badge{position:absolute;top:14px;left:14px;background:var(--O);color:white;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px}
+.prod-body{padding:22px}
+.prod-name{font-family:'Syne',sans-serif;font-size:20px;font-weight:800;color:var(--D);margin-bottom:6px}
+.prod-desc{font-size:14px;color:var(--G);line-height:1.6;margin-bottom:16px}
+.prod-specs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.ps{background:var(--Gb);color:var(--G);font-size:11px;font-weight:600;padding:4px 10px;border-radius:20px}
+.ps.o{background:var(--Obg);color:var(--O)}
+.btn-prod{display:block;text-align:center;background:var(--D);color:white;font-weight:700;font-size:14px;padding:11px;border-radius:8px;transition:background .2s;font-family:'Syne',sans-serif}
+.btn-prod:hover{background:var(--O)}
+
+/* ── KALKULATOR ── */
+.kalk-bg{background:var(--D);position:relative;overflow:hidden}
+.kalk-bg::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(255,122,61,.12) 0%,transparent 60%)}
+.kalk-inner{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.kalk-text .stit{color:white}
+.kalk-text .ssub{color:#9CA3AF}
+.kalk-box{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:36px}
+.kalk-box h3{font-family:'Syne',sans-serif;font-size:20px;color:white;margin-bottom:24px;display:flex;align-items:center;gap:10px}
+.form-group{margin-bottom:20px}
+.form-group label{display:block;font-size:13px;font-weight:600;color:#9CA3AF;margin-bottom:7px;letter-spacing:.3px}
+.form-group input,.form-group select{width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:12px 14px;color:white;font-size:15px;font-family:'Plus Jakarta Sans',sans-serif;transition:border .2s;outline:none}
+.form-group input:focus,.form-group select:focus{border-color:var(--O)}
+.form-group select option{background:var(--D2);color:white}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.kalk-result{background:rgba(255,122,61,.12);border:1px solid rgba(255,122,61,.25);border-radius:12px;padding:24px;margin-top:8px}
+.kr-title{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--Ol);margin-bottom:16px}
+.kr-items{display:grid;gap:10px}
+.kr-item{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid rgba(255,122,61,.15)}
+.kr-item:last-child{border:none}
+.kr-label{font-size:13px;color:#9CA3AF}
+.kr-val{font-family:'Syne',sans-serif;font-size:17px;font-weight:800;color:white}
+.kr-val.big{font-size:24px;color:var(--O)}
+.kr-note{font-size:12px;color:#9CA3AF;margin-top:12px;line-height:1.6}
+.btn-kalk{width:100%;margin-top:20px;background:var(--O);color:white;border:none;font-family:'Syne',sans-serif;font-weight:800;font-size:16px;padding:15px;border-radius:9px;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:8px}
+.btn-kalk:hover{background:var(--Od);transform:translateY(-1px)}
+
+/* ── 5 PERTANYAAN WAJIB ── */
+.qa-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.qa-card{background:var(--Gb);border:1px solid var(--Gbl);border-radius:var(--r);padding:24px;transition:all .3s}
+.qa-card:hover{border-color:var(--O);background:var(--Obg)}
+.qa-num{font-family:'Syne',sans-serif;font-size:36px;font-weight:900;color:rgba(255,122,61,.15);margin-bottom:6px}
+.qa-q{font-family:'Syne',sans-serif;font-size:18px;font-weight:800;color:var(--D);margin-bottom:8px}
+.qa-a{font-size:14px;color:var(--G);line-height:1.65}
+.qa-win{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:12px;font-weight:700;color:var(--O);background:var(--Obg);padding:5px 12px;border-radius:20px;border:1px solid rgba(255,122,61,.2)}
+.qa-full{background:var(--D);border-radius:var(--r);padding:32px;margin-top:24px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}
+.qa-full h3{font-family:'Syne',sans-serif;font-size:22px;color:white}
+.qa-full p{font-size:14px;color:#9CA3AF;margin-top:6px}
+
+/* ── TESTIMONI ── */
+.testi-bg{background:var(--Gb)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.testi-card{background:white;border-radius:var(--r);padding:28px;box-shadow:var(--sh);border:1px solid var(--Gbl);transition:all .3s}
+.testi-card:hover{transform:translateY(-3px);box-shadow:var(--sh2)}
+.testi-stars{color:var(--O);font-size:16px;margin-bottom:14px;letter-spacing:2px}
+.testi-text{font-size:15px;color:var(--D);line-height:1.7;margin-bottom:20px;font-style:italic}
+.testi-author{display:flex;align-items:center;gap:12px}
+.testi-avatar{width:42px;height:42px;border-radius:50%;background:var(--O);display:flex;align-items:center;justify-content:center;color:white;font-family:'Syne',sans-serif;font-weight:800;font-size:16px;flex-shrink:0}
+.testi-name{font-weight:700;font-size:14px;color:var(--D)}
+.testi-role{font-size:12px;color:var(--G);margin-top:2px}
+
+/* ── CTA FINAL ── */
+.cta-final{background:linear-gradient(135deg,var(--O) 0%,var(--Od) 100%);padding:100px 24px;text-align:center;position:relative;overflow:hidden}
+.cta-final::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 40px,rgba(255,255,255,.03) 40px,rgba(255,255,255,.03) 42px)}
+.cta-inner-box{position:relative;max-width:680px;margin:auto}
+.cta-final h2{font-size:clamp(30px,5vw,52px);color:white;margin-bottom:14px}
+.cta-final p{color:rgba(255,255,255,.85);font-size:17px;line-height:1.75;margin-bottom:40px}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn-w{display:inline-flex;align-items:center;gap:8px;background:white;color:var(--O);font-family:'Syne',sans-serif;font-weight:800;font-size:16px;padding:15px 28px;border-radius:9px;transition:all .2s}
+.btn-w:hover{transform:translateY(-1px);box-shadow:0 8px 28px rgba(0,0,0,.2)}
+.btn-wo{display:inline-flex;align-items:center;gap:8px;background:transparent;color:white;font-family:'Syne',sans-serif;font-weight:700;font-size:16px;padding:15px 28px;border-radius:9px;border:2px solid rgba(255,255,255,.5);transition:all .2s}
+.btn-wo:hover{border-color:white;background:rgba(255,255,255,.1)}
+
+/* ── FOOTER ── */
+footer{background:#111120;color:#666;padding:60px 24px 28px}
+.ft-inner{max-width:1180px;margin:auto}
+.ft-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:52px;margin-bottom:52px}
+.ft-logo{font-family:'Syne',sans-serif;font-weight:900;font-size:22px;color:white;display:flex;align-items:center;gap:9px;margin-bottom:6px}
+.ft-logo em{font-style:normal;color:var(--O)}
+.ft-pt{font-size:12px;color:#444;margin-bottom:16px}
+.ft-about{font-size:14px;line-height:1.75;margin-bottom:20px}
+.ft-contact a{display:flex;align-items:center;gap:8px;color:#888;font-size:13px;text-decoration:none;margin-bottom:10px;transition:color .2s}
+.ft-contact a:hover{color:var(--O)}
+.ft-h{font-family:'Syne',sans-serif;font-size:13px;font-weight:800;color:white;letter-spacing:1px;text-transform:uppercase;margin-bottom:18px}
+.ft-links{list-style:none}
+.ft-links li{margin-bottom:10px}
+.ft-links a{color:#666;font-size:14px;transition:color .2s}
+.ft-links a:hover{color:var(--O)}
+.ft-bot{border-top:1px solid #1e1e30;padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:13px}
+.ft-bot strong{color:#aaa}
+
+/* ── WA FLOAT ── */
+.wa-btn{position:fixed;bottom:28px;right:28px;z-index:999;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(37,211,102,.45);animation:wapulse 2.5s ease infinite;transition:transform .2s}
+.wa-btn:hover{transform:scale(1.1)}
+@keyframes wapulse{0%,100%{box-shadow:0 6px 24px rgba(37,211,102,.45),0 0 0 0 rgba(37,211,102,.3)}50%{box-shadow:0 6px 24px rgba(37,211,102,.45),0 0 0 14px rgba(37,211,102,0)}}
+
+/* ── SCROLL ANIM ── */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .55s ease,transform .55s ease}
+.reveal.visible{opacity:1;transform:none}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  .hero-inner{grid-template-columns:1fr}
+  .hero-visual{display:none}
+  .kalk-inner{grid-template-columns:1fr}
+  .prob-grid{grid-template-columns:1fr}
+  .metode-grid{grid-template-columns:1fr 1fr}
+  .prod-grid{grid-template-columns:1fr 1fr}
+  .qa-grid{grid-template-columns:1fr}
+  .ft-grid{grid-template-columns:1fr 1fr}
+  .ss-inner{grid-template-columns:1fr 1fr 1fr}
+}
+@media(max-width:640px){
+  .nav-links{display:none}
+  .ham{display:flex}
+  .prod-grid{grid-template-columns:1fr}
+  .metode-grid{grid-template-columns:1fr}
+  .testi-grid{grid-template-columns:1fr}
+  .ft-grid{grid-template-columns:1fr;gap:32px}
+  .prob-cards{grid-template-columns:1fr}
+  .ss-inner{grid-template-columns:1fr 1fr}
+  .ss-item:nth-child(5){display:none}
+  .form-row{grid-template-columns:1fr}
+  .qa-full{grid-template-columns:1fr}
+  section{padding:64px 24px}
+  .hero{padding:72px 24px 80px}
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="tb-inner">
+    <span>📍 Jl. Raya Cilangkap No. 10A &nbsp;·&nbsp; PT Dekade Nusa Persada</span>
+    <span><span class="tb-badge">GRATIS ONGKIR JABODETABEK</span> &nbsp; WA: <a href="https://wa.me/6282298950095">0822-9895-0095</a></span>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <nav>
+    <a href="#" class="logo">
+      <div class="logo-mark"><div></div><div></div><div></div><div></div></div>
+      Paving<em>Blocks</em>.id
+    </a>
+    <ul class="nav-links">
+      <li><a href="#problem">Problem</a></li>
+      <li><a href="#metode">Metode</a></li>
+      <li><a href="#produk">Produk</a></li>
+      <li><a href="#kalkulator">Kalkulator</a></li>
+      <li><a href="#testi">Testimoni</a></li>
+      <li><a href="https://wa.me/6282298950095" class="btn-nav" target="_blank">Survei Gratis</a></li>
+    </ul>
+    <button class="ham" onclick="toggleNav()" aria-label="menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mob-nav" id="mobNav">
+    <a href="#problem" onclick="closeNav()">Problem yang Kami Selesaikan</a>
+    <a href="#metode" onclick="closeNav()">Metode Pemasangan</a>
+    <a href="#produk" onclick="closeNav()">Produk</a>
+    <a href="#kalkulator" onclick="closeNav()">Kalkulator Estimasi</a>
+    <a href="#testi" onclick="closeNav()">Testimoni</a>
+    <a href="https://wa.me/6282298950095" target="_blank">💬 Survei & RAB Gratis</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-pill"><span></span>SUPPLIER + JASA PASANG · K200–K500</div>
+      <h1>Paving Block<br/><em>Kuat Bertahun-tahun,</em><br/>Bukan Semusim</h1>
+      <p class="hero-sub">
+        Anda berhak mendapatkan paving block yang <strong>benar-benar tahan lama</strong> — bukan yang terlihat bagus di awal lalu amblas dalam setahun. PT Dekade Nusa Persada hadir dengan material hidrolik press SNI dan sistem pemasangan berlapis yang terbukti.
+      </p>
+      <div class="hero-btns">
+        <a href="https://wa.me/6282298950095?text=Halo%20PavingBlocks.id,%20saya%20ingin%20survei%20dan%20RAB%20gratis" target="_blank" class="btn-a">💬 Minta Survei & RAB Gratis</a>
+        <a href="#kalkulator" class="btn-b">🧮 Hitung Estimasi</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-pill"><div class="dot"></div>SNI Bersertifikat</div>
+        <div class="trust-pill"><div class="dot"></div>Hidrolik Press</div>
+        <div class="trust-pill"><div class="dot"></div>Garansi Tertulis</div>
+        <div class="trust-pill"><div class="dot"></div>Bebas Ongkir Jabodetabek</div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="pv-grid">
+        <div class="pv o"></div><div class="pv m"></div><div class="pv"></div><div class="pv o"></div><div class="pv m"></div><div class="pv"></div>
+        <div class="pv m"></div><div class="pv"></div><div class="pv o"></div><div class="pv"></div><div class="pv o"></div><div class="pv m"></div>
+        <div class="pv"></div><div class="pv o"></div><div class="pv m"></div><div class="pv o"></div><div class="pv"></div><div class="pv o"></div>
+        <div class="pv o"></div><div class="pv m"></div><div class="pv"></div><div class="pv m"></div><div class="pv o"></div><div class="pv"></div>
+        <div class="pv m"></div><div class="pv o"></div><div class="pv o"></div><div class="pv"></div><div class="pv m"></div><div class="pv o"></div>
+        <div class="pv"></div><div class="pv m"></div><div class="pv o"></div><div class="pv o"></div><div class="pv"></div><div class="pv m"></div>
+      </div>
+      <div class="pv-label">
+        <div class="pv-stat"><div class="pv-stat-n">K200–K500</div><div class="pv-stat-l">Pilihan Mutu</div></div>
+        <div class="pv-stat"><div class="pv-stat-n">±2.000 m²</div><div class="pv-stat-l">Kapasitas/Hari</div></div>
+        <div class="pv-stat"><div class="pv-stat-n">&lt;24 Jam</div><div class="pv-stat-l">Respons Penawaran</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<div class="stats-strip">
+  <div class="ss-inner">
+    <div class="ss-item"><div class="ss-n">500+</div><div class="ss-l">Proyek Selesai</div></div>
+    <div class="ss-item"><div class="ss-n">10+</div><div class="ss-l">Tahun Pengalaman</div></div>
+    <div class="ss-item"><div class="ss-n">100%</div><div class="ss-l">Satu Pihak Bertanggung Jawab</div></div>
+    <div class="ss-item"><div class="ss-n">6 Bulan</div><div class="ss-l">Garansi Tertulis</div></div>
+    <div class="ss-item"><div class="ss-n">6–10 cm</div><div class="ss-l">Varian Ketebalan</div></div>
+  </div>
+</div>
+
+<!-- PROBLEM REFRAME -->
+<section class="prob-bg" id="problem">
+  <div class="si">
+    <div class="prob-grid">
+      <div class="prob-text reveal">
+        <div class="stag" style="color:var(--Ol)">Kenali Perbedaannya</div>
+        <h2 class="stit" style="color:white">Bukan Soal Murah.<br/><em>Ini Soal Investasi</em><br/>yang Tepat.</h2>
+        <p class="ssub" style="color:#9CA3AF;margin-bottom:28px">
+          Lahan parkir dan jalan yang amblas bukan takdir — itu hasil dari keputusan yang terburu-buru. Kami membantu Anda memilih benar dari awal, sehingga tidak perlu membayar dua kali.
+        </p>
+        <a href="https://wa.me/6282298950095?text=Halo,%20saya%20ingin%20konsultasi%20proyek%20paving%20block" target="_blank" class="btn-a">💬 Konsultasi Sekarang</a>
+      </div>
+      <div class="prob-cards reveal">
+        <div class="prob-card">
+          <div class="pc-icon">⚠️</div>
+          <div class="tag-bad">Sering Terjadi</div>
+          <h4>Paving Amblas & Retak</h4>
+          <p>Sub-base tidak dipadatkan dengan benar. Dalam 6–12 bulan, permukaan turun dan retak merata.</p>
+        </div>
+        <div class="prob-card">
+          <div class="pc-icon">✅</div>
+          <div class="tag-win">Standar Kami</div>
+          <h4>Sub-Base Terpadatkan</h4>
+          <p>Setiap lapisan dipadatkan dengan stamper/vibro roller sebelum paving diletakkan.</p>
+        </div>
+        <div class="prob-card">
+          <div class="pc-icon">⚠️</div>
+          <div class="tag-bad">Sering Terjadi</div>
+          <h4>Genangan & Bergelombang</h4>
+          <p>Kemiringan dan drainase tidak diperhitungkan. Air menggenang, mempercepat kerusakan.</p>
+        </div>
+        <div class="prob-card">
+          <div class="pc-icon">✅</div>
+          <div class="tag-win">Standar Kami</div>
+          <h4>Leveling & Drainase Presisi</h4>
+          <p>Kemiringan 1–2% ke arah drainase diperhitungkan dan dieksekusi dari leveling awal.</p>
+        </div>
+        <div class="prob-card">
+          <div class="pc-icon">⚠️</div>
+          <div class="tag-bad">Sering Terjadi</div>
+          <h4>Mutu Tidak Sesuai Beban</h4>
+          <p>K200 dipasang di area dilalui truk. Blok pecah dalam hitungan bulan.</p>
+        </div>
+        <div class="prob-card">
+          <div class="pc-icon">✅</div>
+          <div class="tag-win">Standar Kami</div>
+          <h4>Mutu Dipilih Berdasar Data</h4>
+          <p>Kami survei beban aktual di lokasi Anda sebelum merekomendasikan mutu K yang tepat.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METODE -->
+<section id="metode">
+  <div class="si">
+    <div class="stag">Sistem 6 Lapis</div>
+    <h2 class="stit">Cara Kami Memastikan<br/><em>Hasilnya Bertahan Lama</em></h2>
+    <p class="ssub">Setiap langkah di bawah ini menutup satu potensi kegagalan. Inilah perbedaan antara tukang borongan dan kontraktor profesional yang bertanggung jawab atas hasilnya.</p>
+    <div class="metode-grid">
+      <div class="met-card reveal">
+        <div class="met-num">LANGKAH 01</div>
+        <div class="met-icon">📐</div>
+        <h3>Survei Lokasi & RAB Transparan</h3>
+        <p>Pengukuran presisi, analisa kondisi tanah, dan perhitungan volume material sebelum satu bata pun dipasang.</p>
+        <div class="met-result">✓ Tidak ada biaya kejutan</div>
+      </div>
+      <div class="met-card reveal">
+        <div class="met-num">LANGKAH 02</div>
+        <div class="met-icon">🔨</div>
+        <h3>Pemadatan Sub-Base Berlapis</h3>
+        <p>Urugan makadam/sirtu dipadatkan dengan stamper vibrasi atau vibro roller hingga kepadatan optimal. Pondasi yang benar adalah fondasi segalanya.</p>
+        <div class="met-result">✓ Anti-amblas jangka panjang</div>
+      </div>
+      <div class="met-card reveal">
+        <div class="met-num">LANGKAH 03</div>
+        <div class="met-icon">📏</div>
+        <h3>Gelar Abu Batu & Leveling Akurat</h3>
+        <p>Bedding layer abu batu dihampar lalu diratakan menggunakan screed aluminium dengan kemiringan drainase yang terukur.</p>
+        <div class="met-result">✓ Permukaan rata & bebas genangan</div>
+      </div>
+      <div class="met-card reveal">
+        <div class="met-num">LANGKAH 04</div>
+        <div class="met-icon">🧱</div>
+        <h3>Pilih Mutu K Sesuai Beban Nyata</h3>
+        <p>Rekomendasi mutu K200/K300/K400/K500 berdasarkan data beban aktual di lokasi Anda — bukan asumsi atau tebakan.</p>
+        <div class="met-result">✓ Tidak pecah, tidak over-budget</div>
+      </div>
+      <div class="met-card reveal">
+        <div class="met-num">LANGKAH 05</div>
+        <div class="met-icon">🔒</div>
+        <h3>Pemasangan Pola + Kanstin Pengunci</h3>
+        <p>Paving dipasang dengan pola kuncian dan diperkuat kanstin beton di seluruh tepi. Tidak akan bergeser meski dilalui kendaraan berat sekalipun.</p>
+        <div class="met-result">✓ Tidak bergeser & tidak merenggang</div>
+      </div>
+      <div class="met-card reveal">
+        <div class="met-num">LANGKAH 06</div>
+        <div class="met-icon">📋</div>
+        <h3>Serah Terima + Garansi Tertulis</h3>
+        <p>Pengisian nat, pemadatan akhir, pembersihan lokasi, dan dokumen garansi perbaikan 6 bulan yang kami tandatangani bersama Anda.</p>
+        <div class="met-result">✓ Perlindungan setelah pekerjaan selesai</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUK -->
+<section id="produk" style="background:var(--Gb)">
+  <div class="si">
+    <div class="stag">Pilihan Produk</div>
+    <h2 class="stit">Pilih Model, Kami Bantu<br/><em>Tentukan Mutu yang Tepat</em></h2>
+    <p class="ssub">Tersedia dalam mutu K200–K500 dan tebal 6–10 cm. Cukup ceritakan lokasi dan beban kendaraannya — kami hitung spesifikasi terbaiknya untuk Anda.</p>
+    <div class="prod-grid">
+      <!-- Holland -->
+      <div class="prod-card reveal">
+        <div class="prod-img" style="background:linear-gradient(135deg,#f0f0f0,#e2e2e2)">
+          <div class="prod-badge">⭐ Terlaris</div>
+          <svg viewBox="0 0 260 200" width="260" height="200" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="20" width="72" height="38" rx="5" fill="#FF7A3D"/>
+            <rect x="90" y="20" width="72" height="38" rx="5" fill="#ccc"/>
+            <rect x="170" y="20" width="72" height="38" rx="5" fill="#FF7A3D"/>
+            <rect x="50" y="66" width="72" height="38" rx="5" fill="#ccc"/>
+            <rect x="130" y="66" width="72" height="38" rx="5" fill="#FF7A3D"/>
+            <rect x="10" y="112" width="72" height="38" rx="5" fill="#FF7A3D"/>
+            <rect x="90" y="112" width="72" height="38" rx="5" fill="#ccc"/>
+            <rect x="170" y="112" width="72" height="38" rx="5" fill="#FF7A3D"/>
+            <rect x="50" y="158" width="72" height="38" rx="5" fill="#ccc"/>
+            <rect x="130" y="158" width="72" height="38" rx="5" fill="#FF7A3D"/>
+          </svg>
+        </div>
+        <div class="prod-body">
+          <div class="prod-name">Holland (Bata)</div>
+          <p class="prod-desc">Model klasik dengan pola interlocking kuat. Pilihan paling fleksibel untuk parkir, jalan lingkungan, halaman, dan perumahan.</p>
+          <div class="prod-specs">
+            <span class="ps o">K200</span><span class="ps o">K300</span><span class="ps o">K400</span><span class="ps o">K500</span>
+            <span class="ps">6–10 cm</span><span class="ps">SNI</span>
+          </div>
+          <a href="https://wa.me/6282298950095?text=Halo,%20saya%20ingin%20tahu%20harga%20paving%20Holland%20(Bata)" target="_blank" class="btn-prod">Cek Harga / m² →</a>
+        </div>
+      </div>
+      <!-- Ubin -->
+      <div class="prod-card reveal">
+        <div class="prod-img" style="background:linear-gradient(135deg,#f0f0f0,#e2e2e2)">
+          <div class="prod-badge">🏢 Minimalis</div>
+          <svg viewBox="0 0 260 200" width="260" height="200" xmlns="http://www.w3.org/2000/svg">
+            <rect x="14" y="14" width="64" height="64" rx="5" fill="#FF7A3D"/>
+            <rect x="86" y="14" width="64" height="64" rx="5" fill="#ccc"/>
+            <rect x="158" y="14" width="64" height="64" rx="5" fill="#FF7A3D"/>
+            <rect x="14" y="86" width="64" height="64" rx="5" fill="#ccc"/>
+            <rect x="86" y="86" width="64" height="64" rx="5" fill="#FF7A3D"/>
+            <rect x="158" y="86" width="64" height="64" rx="5" fill="#ccc"/>
+          </svg>
+        </div>
+        <div class="prod-body">
+          <div class="prod-name">Ubin (Square)</div>
+          <p class="prod-desc">Tampilan bersih dan modern. Ideal untuk area komersial, perkantoran, dan kawasan yang mengutamakan estetika tinggi.</p>
+          <div class="prod-specs">
+            <span class="ps o">K200</span><span class="ps o">K300</span><span class="ps o">K400</span><span class="ps o">K500</span>
+            <span class="ps">6–10 cm</span><span class="ps">SNI</span>
+          </div>
+          <a href="https://wa.me/6282298950095?text=Halo,%20saya%20ingin%20tahu%20harga%20paving%20Ubin%20(Square)" target="_blank" class="btn-prod">Cek Harga / m² →</a>
+        </div>
+      </div>
+      <!-- Cacing -->
+      <div class="prod-card reveal">
+        <div class="prod-img" style="background:linear-gradient(135deg,#f0f0f0,#e2e2e2)">
+          <div class="prod-badge">🏭 Industrial</div>
+          <svg viewBox="0 0 260 200" width="260" height="200" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="50" cy="50" rx="36" ry="22" fill="#FF7A3D"/>
+            <ellipse cx="130" cy="50" rx="36" ry="22" fill="#ccc"/>
+            <ellipse cx="210" cy="50" rx="36" ry="22" fill="#FF7A3D"/>
+            <ellipse cx="90" cy="100" rx="36" ry="22" fill="#ccc"/>
+            <ellipse cx="170" cy="100" rx="36" ry="22" fill="#FF7A3D"/>
+            <ellipse cx="50" cy="150" rx="36" ry="22" fill="#FF7A3D"/>
+            <ellipse cx="130" cy="150" rx="36" ry="22" fill="#ccc"/>
+            <ellipse cx="210" cy="150" rx="36" ry="22" fill="#FF7A3D"/>
+          </svg>
+        </div>
+        <div class="prod-body">
+          <div class="prod-name">Cacing / Uni (Interlocking)</div>
+          <p class="prod-desc">Pola zig-zag dengan kuncian paling kuat. Dirancang untuk beban maksimal: kawasan industri, gudang besar, dan pelabuhan.</p>
+          <div class="prod-specs">
+            <span class="ps o">K300</span><span class="ps o">K400</span><span class="ps o">K500</span>
+            <span class="ps">8–10 cm</span><span class="ps">SNI</span>
+          </div>
+          <a href="https://wa.me/6282298950095?text=Halo,%20saya%20ingin%20tahu%20harga%20paving%20Cacing%20(Uni)" target="_blank" class="btn-prod">Cek Harga / m² →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KALKULATOR -->
+<section class="kalk-bg" id="kalkulator">
+  <div class="si">
+    <div class="kalk-inner">
+      <div class="kalk-text reveal">
+        <div class="stag" style="color:var(--Ol)">Estimasi Instan</div>
+        <h2 class="stit" style="color:white">Hitung Kebutuhan<br/><em>& Estimasi Biaya</em><br/>Proyek Anda</h2>
+        <p class="ssub" style="color:#9CA3AF;margin-bottom:32px">
+          Masukkan ukuran lahan dan jenis kendaraan yang akan melewatinya. Kalkulator ini akan menghitung estimasi kebutuhan material, mutu K yang direkomendasikan, dan estimasi biaya awal.
+        </p>
+        <div style="background:rgba(255,122,61,.1);border:1px solid rgba(255,122,61,.2);border-radius:12px;padding:20px;margin-bottom:24px">
+          <p style="font-size:13px;color:#9CA3AF;line-height:1.7">
+            <strong style="color:var(--Ol)">💡 Tips:</strong> Hasil kalkulator ini adalah estimasi awal. Untuk RAB yang akurat dan final, tim kami akan melakukan survei lokasi secara gratis tanpa kewajiban apapun.
+          </p>
+        </div>
+        <a href="https://wa.me/6282298950095?text=Halo,%20saya%20ingin%20survei%20gratis%20dan%20RAB%20proyek%20paving%20block" target="_blank" class="btn-a">📐 Minta Survei & RAB Gratis</a>
+      </div>
+      <div class="kalk-box reveal">
+        <h3>🧮 Kalkulator Estimasi Proyek</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Panjang Lahan (meter)</label>
+            <input type="number" id="panjang" placeholder="Contoh: 20" min="1" oninput="hitung()"/>
+          </div>
+          <div class="form-group">
+            <label>Lebar Lahan (meter)</label>
+            <input type="number" id="lebar" placeholder="Contoh: 15" min="1" oninput="hitung()"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Jenis Penggunaan / Beban Kendaraan</label>
+          <select id="penggunaan" onchange="hitung()">
+            <option value="">-- Pilih Jenis Penggunaan --</option>
+            <option value="halaman">Halaman Rumah / Taman</option>
+            <option value="parkir_motor">Parkir Motor / Sepeda</option>
+            <option value="parkir_mobil">Parkir Mobil / Perumahan</option>
+            <option value="parkir_komersial">Parkir Komersial / Mall / Kantor</option>
+            <option value="jalan_lingkungan">Jalan Lingkungan Perumahan</option>
+            <option value="gudang">Gudang / Pabrik (Forklift)</option>
+            <option value="industri">Industri Berat / Truk / Kontainer</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Jenis Paving Block</label>
+          <select id="jenispv" onchange="hitung()">
+            <option value="holland">Holland (Bata)</option>
+            <option value="ubin">Ubin (Square)</option>
+            <option value="cacing">Cacing / Uni (Interlocking)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Apakah termasuk jasa pemasangan?</label>
+          <select id="jasa" onchange="hitung()">
+            <option value="material">Material saja</option>
+            <option value="pasang">Material + Jasa Pasang (lengkap)</option>
+          </select>
+        </div>
+        <div class="kalk-result" id="hasilBox" style="display:none">
+          <div class="kr-title">📊 HASIL ESTIMASI PROYEK</div>
+          <div class="kr-items">
+            <div class="kr-item"><span class="kr-label">Luas Lahan</span><span class="kr-val" id="r-luas">—</span></div>
+            <div class="kr-item"><span class="kr-label">Mutu Rekomendasi</span><span class="kr-val" id="r-mutu">—</span></div>
+            <div class="kr-item"><span class="kr-label">Tebal Paving</span><span class="kr-val" id="r-tebal">—</span></div>
+            <div class="kr-item"><span class="kr-label">Kebutuhan Material (+ 5% toleransi)</span><span class="kr-val" id="r-material">—</span></div>
+            <div class="kr-item"><span class="kr-label">Estimasi Biaya</span><span class="kr-val big" id="r-biaya">—</span></div>
+          </div>
+          <p class="kr-note" id="r-catatan"></p>
+        </div>
+        <button class="btn-kalk" onclick="kirimWA()">
+          💬 Minta Penawaran Resmi via WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 PERTANYAAN WAJIB -->
+<section>
+  <div class="si">
+    <div class="stag">Due Diligence</div>
+    <h2 class="stit">5 Pertanyaan yang Wajib Anda<br/>Ajukan ke <em>Semua Supplier</em></h2>
+    <p class="ssub">Gunakan daftar ini sebagai filter sebelum Anda memutuskan. Supplier yang serius dan kompeten akan menjawab semuanya dengan percaya diri — termasuk kami.</p>
+    <div class="qa-grid">
+      <div class="qa-card reveal">
+        <div class="qa-num">01</div>
+        <div class="qa-q">Apakah menggunakan mesin hidrolik press atau cetak manual?</div>
+        <p class="qa-a">Cetak manual menghasilkan dimensi yang tidak konsisten dan kepadatan yang tidak merata. Untuk lahan yang menahan beban kendaraan, standar minimum adalah hidrolik press.</p>
+        <div class="qa-win">✓ Kami: 100% Hidrolik Press</div>
+      </div>
+      <div class="qa-card reveal">
+        <div class="qa-num">02</div>
+        <div class="qa-q">Bisakah tunjukkan bukti uji kuat tekan atau sertifikasi SNI?</div>
+        <p class="qa-a">Label "K300" atau "K400" tanpa dokumen uji laboratorium tidak memiliki nilai. Setiap batch produksi kami dilengkapi data uji tekanan yang bisa ditunjukkan kapan saja.</p>
+        <div class="qa-win">✓ Kami: Sertifikat SNI tersedia</div>
+      </div>
+      <div class="qa-card reveal">
+        <div class="qa-num">03</div>
+        <div class="qa-q">Apakah pemasangan sudah termasuk pemadatan sub-base dan kanstin tepi?</div>
+        <p class="qa-a">Paving tanpa sub-base yang dipadatkan dan tanpa kanstin pengunci adalah paving yang menunggu waktu untuk amblas dan bergeser. Keduanya tidak opsional.</p>
+        <div class="qa-win">✓ Kami: Sudah termasuk, standar bukan tambahan</div>
+      </div>
+      <div class="qa-card reveal">
+        <div class="qa-num">04</div>
+        <div class="qa-q">Bagaimana penanganan kemiringan dan sistem drainase?</div>
+        <p class="qa-a">Supplier yang tidak membicarakan arah aliran air adalah supplier yang tidak memikirkan umur panjang pekerjaannya. Air yang menggenang di bawah paving adalah musuh utama ketahanannya.</p>
+        <div class="qa-win">✓ Kami: Drainase terancang di setiap proyek</div>
+      </div>
+      <div class="qa-card reveal">
+        <div class="qa-num">05</div>
+        <div class="qa-q">Adakah garansi perbaikan yang diberikan secara tertulis?</div>
+        <p class="qa-a">Garansi lisan tidak memiliki kekuatan apapun. Pastikan ada dokumen tertulis yang menyebut durasi, cakupan, dan mekanisme klaim — sebelum Anda menandatangani kontrak apapun.</p>
+        <div class="qa-win">✓ Kami: Garansi 6 bulan, dokumen tertulis</div>
+      </div>
+    </div>
+    <div class="qa-full reveal">
+      <div>
+        <h3 style="color:white">Ragu dengan penawaran vendor lain?</h3>
+        <p>Kirimkan RAB atau penawaran yang Anda terima ke kami. Kami bandingkan secara jujur dan transparan — tanpa biaya, tanpa tekanan.</p>
+      </div>
+      <a href="https://wa.me/6282298950095?text=Halo,%20saya%20ingin%20membandingkan%20penawaran%20vendor%20paving%20block%20yang%20saya%20terima" target="_blank" class="btn-a" style="white-space:nowrap">Bandingkan Penawaran →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section class="testi-bg" id="testi">
+  <div class="si">
+    <div class="stag" style="text-align:center">Testimoni Nyata</div>
+    <h2 class="stit" style="text-align:center;margin-bottom:52px">Mereka Sudah Membuktikannya.<br/><em>Giliran Anda.</em></h2>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Area gudang kami dilewati forklift dan truk setiap hari. Sudah 18 bulan sejak pemasangan, kondisinya masih sempurna. Pemadatan sub-base-nya betul-betul berbeda dari vendor sebelumnya."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">BW</div>
+          <div>
+            <div class="testi-name">Budi Wicaksono</div>
+            <div class="testi-role">Manajer Operasional · Perusahaan Logistik</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Tiga cluster perumahan kami pakai PavingBlocks.id. Satu kontak untuk material dan pemasangan — tidak ada drama saling lempar tanggung jawab kalau ada masalah."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">RA</div>
+          <div>
+            <div class="testi-name">Rini Anggraeni</div>
+            <div class="testi-role">Project Manager · Developer Properti</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"RAB-nya transparan dari awal. Tidak ada item tersembunyi yang muncul belakangan. K500 untuk area bongkar muat kami sudah setahun lebih tanpa satu pun blok yang retak."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">SH</div>
+          <div>
+            <div class="testi-name">Surya Hartanto</div>
+            <div class="testi-role">Direktur Teknis · Perusahaan Manufaktur</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<div class="cta-final">
+  <div class="cta-inner-box">
+    <h2>Proyek Anda Layak<br/>Dikerjakan dengan Benar.</h2>
+    <p>Dapatkan survei lokasi dan RAB transparan — gratis, tanpa kewajiban. Tim kami merespons dalam kurang dari 24 jam.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/6282298950095?text=Halo%20PavingBlocks.id,%20saya%20ingin%20survei%20gratis%20dan%20RAB%20untuk%20proyek%20saya" target="_blank" class="btn-w">💬 Survei & RAB Gratis Sekarang</a>
+      <a href="tel:082298950095" class="btn-wo">📞 0822-9895-0095</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-inner">
+    <div class="ft-grid">
+      <div>
+        <div class="ft-logo"><div class="logo-mark"><div></div><div></div><div></div><div></div></div>Paving<em>Blocks</em>.id</div>
+        <div class="ft-pt">by PT Dekade Nusa Persada</div>
+        <p class="ft-about">Supplier paving block dan kontraktor pemasangan profesional dengan pengalaman lebih dari 10 tahun. Melayani proyek residensial, komersial, dan industri di seluruh Indonesia.</p>
+        <div class="ft-contact">
+          <a href="https://wa.me/6282298950095" target="_blank"><span>💬</span><span>0822-9895-0095 (WhatsApp)</span></a>
+          <a href="tel:082298950095"><span>📞</span><span>0822-9895-0095</span></a>
+          <a href="#"><span>📍</span><span>Jl. Raya Cilangkap No. 10A</span></a>
+          <a href="#"><span>🕐</span><span>Senin – Sabtu: 08.00 – 17.00 WIB</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="ft-h">Produk</div>
+        <ul class="ft-links">
+          <li><a href="#produk">Paving Holland (Bata)</a></li>
+          <li><a href="#produk">Paving Ubin (Square)</a></li>
+          <li><a href="#produk">Paving Cacing (Uni)</a></li>
+          <li><a href="#produk">Mutu K200 – K500</a></li>
+          <li><a href="#produk">Tebal 6 cm – 10 cm</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-h">Layanan</div>
+        <ul class="ft-links">
+          <li><a href="#metode">Jasa Pasang Profesional</a></li>
+          <li><a href="#kalkulator">Kalkulator Estimasi</a></li>
+          <li><a href="https://wa.me/6282298950095" target="_blank">Survei Lokasi Gratis</a></li>
+          <li><a href="https://wa.me/6282298950095" target="_blank">Konsultasi Teknis</a></li>
+          <li><a href="https://wa.me/6282298950095" target="_blank">RAB Transparan</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-h">Jangkauan Proyek</div>
+        <ul class="ft-links">
+          <li><a href="#">Jakarta & Jabodetabek</a></li>
+          <li><a href="#">Jawa Barat</a></li>
+          <li><a href="#">Residensial & Perumahan</a></li>
+          <li><a href="#">Komersial & Perkantoran</a></li>
+          <li><a href="#">Industri & Pergudangan</a></li>
+        </ul>
+        <div style="margin-top:20px;background:rgba(255,122,61,.1);border:1px solid rgba(255,122,61,.2);border-radius:8px;padding:14px">
+          <p style="font-size:12px;color:#9CA3AF;line-height:1.65">
+            <strong style="color:var(--Ol)">🚚 Bebas Ongkir</strong><br/>
+            Pengiriman gratis untuk area Jabodetabek dengan minimal order berlaku.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>© 2026 <strong>PavingBlocks.id</strong> — PT Dekade Nusa Persada. All rights reserved.</span>
+      <span style="font-size:12px;color:#444">Material K200–K500 · SNI · Hidrolik Press · Garansi Tertulis</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/6282298950095?text=Halo%20PavingBlocks.id,%20saya%20ingin%20tanya%20mengenai%20paving%20block" target="_blank" class="wa-btn" title="Chat WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<script>
+// NAV
+function toggleNav(){document.getElementById('mobNav').classList.toggle('open')}
+function closeNav(){document.getElementById('mobNav').classList.remove('open')}
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const h=this.getAttribute('href');
+    if(h==='#')return;
+    const t=document.querySelector(h);
+    if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+scrollY-72,behavior:'smooth'})}
+  })
+});
+
+// REVEAL
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible')}})
+},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// KALKULATOR
+const DATA={
+  halaman:      {mutu:'K200',tebal:'6 cm',hargaMat:100000,hargaPasang:145000,catatan:'Paving bata K200 tebal 6 cm sudah cukup untuk halaman rumah dan area pejalan kaki.'},
+  parkir_motor: {mutu:'K200',tebal:'6 cm',hargaMat:100000,hargaPasang:145000,catatan:'Motor tidak memberikan beban berat, K200 tebal 6 cm adalah pilihan ekonomis yang tepat.'},
+  parkir_mobil: {mutu:'K300',tebal:'6 cm',hargaMat:125000,hargaPasang:170000,catatan:'K300 tebal 6 cm adalah standar minimum yang direkomendasikan untuk parkir kendaraan roda empat.'},
+  parkir_komersial:{mutu:'K300',tebal:'8 cm',hargaMat:145000,hargaPasang:195000,catatan:'Area komersial dengan traffic padat membutuhkan K300 tebal 8 cm untuk daya tahan optimal.'},
+  jalan_lingkungan:{mutu:'K300',tebal:'8 cm',hargaMat:145000,hargaPasang:195000,catatan:'Jalan yang dilalui kendaraan campuran (motor + mobil) membutuhkan K300 minimum tebal 8 cm.'},
+  gudang:       {mutu:'K400',tebal:'8 cm',hargaMat:165000,hargaPasang:220000,catatan:'Forklift bermuatan menghasilkan tekanan titik yang tinggi. K400 tebal 8 cm adalah standar pergudangan.'},
+  industri:     {mutu:'K500',tebal:'10 cm',hargaMat:195000,hargaPasang:265000,catatan:'Untuk truk berat dan kontainer, K500 tebal 10 cm adalah satu-satunya pilihan yang aman secara teknis.'},
+};
+const JENIS_MULT={holland:1.0, ubin:1.02, cacing:1.05};
+
+function fmt(n){return'Rp '+n.toLocaleString('id-ID')}
+
+function hitung(){
+  const p=parseFloat(document.getElementById('panjang').value)||0;
+  const l=parseFloat(document.getElementById('lebar').value)||0;
+  const pg=document.getElementById('penggunaan').value;
+  const jv=document.getElementById('jenispv').value;
+  const jasa=document.getElementById('jasa').value;
+  const box=document.getElementById('hasilBox');
+  if(!p||!l||!pg){box.style.display='none';return}
+  const d=DATA[pg];
+  const luas=p*l;
+  const mat=Math.ceil(luas*1.05);
+  const mult=JENIS_MULT[jv]||1;
+  const harga=jasa==='pasang'?d.hargaPasang:d.hargaMat;
+  const total=Math.round(luas*harga*mult);
+  document.getElementById('r-luas').textContent=luas.toLocaleString('id-ID')+' m²';
+  document.getElementById('r-mutu').textContent=d.mutu+' (Hidrolik Press · SNI)';
+  document.getElementById('r-tebal').textContent=d.tebal;
+  document.getElementById('r-material').textContent=mat.toLocaleString('id-ID')+' m²';
+  document.getElementById('r-biaya').textContent=fmt(total)+(jasa==='pasang'?' (termasuk jasa)':', (material saja)');
+  document.getElementById('r-catatan').textContent='📌 '+d.catatan+' Estimasi ini belum termasuk kanstin, sub-base, dan biaya mobilisasi. Survei gratis untuk RAB final.';
+  box.style.display='block';
+}
+
+function kirimWA(){
+  const p=document.getElementById('panjang').value||'?';
+  const l=document.getElementById('lebar').value||'?';
+  const pg=document.getElementById('penggunaan').options[document.getElementById('penggunaan').selectedIndex].text;
+  const jv=document.getElementById('jenispv').options[document.getElementById('jenispv').selectedIndex].text;
+  const js=document.getElementById('jasa').options[document.getElementById('jasa').selectedIndex].text;
+  const biaya=document.getElementById('r-biaya').textContent;
+  const msg=`Halo PavingBlocks.id, saya ingin penawaran resmi untuk proyek berikut:
+📐 Lahan: ${p} x ${l} meter
+🚗 Penggunaan: ${pg}
+🧱 Jenis paving: ${jv}
+🔧 Kebutuhan: ${js}
+💰 Estimasi saya: ${biaya}
+
+Mohon dihubungi untuk survei & RAB gratis. Terima kasih.`;
+  window.open('https://wa.me/6282298950095?text='+encodeURIComponent(msg),'_blank');
+}
+</script>
+</body>
+</html>
